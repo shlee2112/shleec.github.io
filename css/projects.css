@@ -1,0 +1,20 @@
+h1,h2,h3{
+	margin: 1em 0;
+}
+
+p{
+  margin: 0 0 1em 0;
+}
+
+ul.lists{
+  padding-left: 3em;
+}
+
+ul.lists > li{
+  list-style-type: circle;
+  margin: 0 0 1em 0;
+}
+
+section.row > div{
+  margin: 2em 0 2em 0;
+}

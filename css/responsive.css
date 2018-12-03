@@ -1,0 +1,121 @@
+/*============= Typography =============*/
+
+
+/*---- Mobile Phones (576px+) ---*/
+@media screen and (min-width: 576px){
+
+
+}
+
+
+
+/*--- Tablets (768px+) ---*/
+@media screen and (min-width: 768px){
+
+  html{
+    font-size: 16px;
+  }
+
+}
+
+
+/*--- Desktops (992px+) ---*/
+@media screen and (min-width: 992px){
+
+  html{
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+
+
+/*============= Navigation Bar =============*/
+
+
+@media screen and (min-width: 576px){
+
+
+
+}
+
+@media screen and (max-width: 576px){
+
+  .container-burger {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 0;
+  }
+
+  nav ul {
+    display: none;
+    margin: 1em 0;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+/*============= Contents =============*/
+@media screen and (max-width: 575px){
+
+  .col-12:not(figure){
+    padding: 0 7%;
+  }
+
+  .resume{
+    padding: 0 4%;
+  }
+
+
+}
+
+/*---- Mobile Phones (576px+) ---*/
+@media screen and (min-width: 576px){
+  section.about{
+  	order: 2;
+  }
+
+  img.avatar{
+  	order: 1;
+  }
+}
+
+
+
+
+
+
+/*--- Tablets (768px+) ---*/
+@media screen and (min-width: 768px){
+  section.about{
+  	order: 1;
+  }
+
+  img.avatar{
+  	order: 2;
+  }
+
+}
+
+
+
+
+
+/*--- Desktops (992px+) ---*/
+@media screen and (min-width: 992px){
+
+}

@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------*/
+/*This Media Query is only for "Responsive Design Assignment"*/
+
+/*============= Orientation =============*/
+
+@media only screen and (orientation: landscape) {
+  body {
+      background: url(../images/bg.png) no-repeat right bottom fixed;
+      background-size: cover;
+      height: 100%;
+      }
+}
+
+/*------------------------------------------------------------------*/

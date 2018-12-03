@@ -1,0 +1,425 @@
+/*============= CSS Reset =============*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/*============= Main =============*/
+
+* {
+  box-sizing: border-box;
+}
+
+body, html{
+  width: 100%;
+  background-color: #fff;
+	overflow-x: hidden;
+	font-family: europa, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+h1{
+	font-family:'Montserrat';
+	font-size: 2.369rem;
+	font-weight: 500;
+}
+
+h2{
+	font-family:'Montserrat';
+	font-size: 1.777rem;
+	font-weight: 600;
+}
+
+h3{
+	font-family:'Montserrat';
+	font-size: 1.333rem;
+	font-weight: 600;
+}
+
+caption{
+	font-family: europa, sans-serif;
+	font-size: .75rem;
+	font-weight: 600;
+	font-style: italic;
+}
+
+p{
+	font-family: europa, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.5em;
+	margin: 1em 0 1em 0;
+}
+
+li{
+	font-family: europa, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+a{
+	color: #009CDE;
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+	color: #009CDE;
+}
+
+
+a:active{
+	color: #000;
+}
+
+
+a.active{
+	color: #009CDE;
+}
+
+a.italic{
+	font-style: italic;
+}
+
+i{
+	color: #000;
+}
+
+i:hover{
+	color: #009CDE;
+}
+
+
+
+
+
+
+
+/*=============Preloader=============*/
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.preloader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/preloader.gif) center no-repeat #fff;
+	background-size: 75px 75px;
+}
+
+
+
+
+
+
+/*============= Header =============*/
+
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+	margin: 1em 2em;
+}
+
+nav .logo-container {
+  /* margin-left: 4vw; */
+  font-size: 1.5em;
+	cursor: pointer;
+}
+
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: .5em 0 .5em 0;
+}
+
+
+nav li {
+  list-style: none;
+  margin-left: 2em;
+  /* padding: .8em; */
+}
+
+
+nav a{
+	color: #000;
+	text-decoration: none;
+}
+
+
+.container-burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+	z-index: 99;
+}
+
+.line1{
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: .2s;
+}
+
+
+.line2, .line3 {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: .2s;
+}
+
+.active-burger .line1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.active-burger .line2 {
+  opacity: 0;
+}
+
+.active-burger .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+.show-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: #fff;
+	transition-duration: 5s;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.show-menu-mobile a{
+	font-size: 2em;
+	font-weight: 500;
+}
+
+a.logo:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+/*============= Banner =============*/
+
+.banner{
+	margin: 5em 0 5em 0;
+}
+
+.banner p{
+ line-height: 1.5em;
+ font-weight: 400;
+ letter-spacing: 0.02em;
+ color: #333;
+}
+
+.banner p > strong{
+ font-weight: 600;
+}
+
+
+
+
+/*============= Contents =============*/
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.cover {
+  position: relative;
+	padding: 0;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.overlay h2,p{
+	margin: 0;
+}
+
+.cover:hover .overlay {
+  opacity: 0.8;
+}
+
+
+.overlay p, .overlay h2{
+  color: white;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pic{
+	width:100%;
+	height: 100%;
+	padding: 0;
+	margin: 1em 0 1em 0;
+}
+
+
+section{
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+
+section > h1,h2,h3{
+	margin: 1em 0 1em 0;
+}
+
+section.links{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.links > a{
+	margin: 0 10px;
+}
+
+.links a{
+	color: #000;
+}
+
+.links a:hover{
+	color: #009CDE;
+	text-decoration: none;
+}
+
+section.title {
+	position: relative;
+	margin: 6em 0 6em;
+	text-align: center;
+}
+
+.resume > p{
+	margin: 0 0 1em 0;
+}
+
+
+
+/*=============Footer=============*/
+
+footer{
+  background-color: #fff;
+  width: 100%;
+  color: #000;
+  margin: 8em 0 5em 0;
+  text-align: center;
+}
+
+footer p{
+	color: #777;
+}
+
+footer a{
+	color: #777;
+  padding: .5em;
+}
+
+footer a:hover{
+	color: #009CDE;
+	text-decoration: none;
+}
